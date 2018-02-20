@@ -42,7 +42,7 @@ class Game extends React.Component {
 
     render() {
         const winner = this.checkVictory();
-        let headerText = `Player ${this.state.activePlayer ? 'X' : '0'}: Please proceed`
+        let headerText = `Player ${this.state.activePlayer ? 'X' : '0'}: Please proceed`;
         if (winner != null) {
             headerText = `Winner: Player ${winner}`;
         }
